@@ -1,0 +1,791 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Volga Can Karakus | Welcome</title>
+</head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+<style>
+.card {
+
+    padding: 30px;
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+}
+.card.hovercard .card-background {
+    height: 130px;
+}
+.card-background img {
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    margin-left: -100px;
+    margin-top: -200px;
+    min-width: 130%;
+}
+.card.hovercard .useravatar {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 0;
+}
+.card.hovercard .useravatar img {
+    width: 300px;
+    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+.card.hovercard .card-info {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .card-info .card-title {
+    padding:0 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: #262626;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.card.hovercard .card-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+}
+
+
+.material-button-anim {
+  position: relative;
+  padding: 127px 15px 27px;
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto 20px;
+}
+
+.material-button {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+    color: #fff;
+    background: #2C98DE;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.275);
+    outline: none;
+}
+.material-button-toggle {
+    z-index: 3;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+.material-button-toggle span {
+    -webkit-transform: none;
+    transform:         none;
+    -webkit-transition: -webkit-transform .175s cubic-bazier(.175,.67,.83,.67);
+    transition:         transform .175s cubic-bazier(.175,.67,.83,.67);
+}
+.material-button-toggle.open {
+    -webkit-transform: scale(1.3,1.3);
+    transform:         scale(1.3,1.3);
+    -webkit-animation: toggleBtnAnim .175s;
+    animation:         toggleBtnAnim .175s;
+}
+.material-button-toggle.open span {
+    -webkit-transform: rotate(45deg);
+    transform:         rotate(45deg);
+    -webkit-transition: -webkit-transform .175s cubic-bazier(.175,.67,.83,.67);
+    transition:         transform .175s cubic-bazier(.175,.67,.83,.67);
+}
+
+#options {
+  height: 70px;
+}
+.option {
+    position: relative;
+}
+.option .option1,
+.option .option2,
+.option .option3 {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -webkit-transition: all .175s;
+    transition:         all .175s;
+}
+.option .option1 {
+    -webkit-transform: translate3d(90px,90px,0) scale(.8,.8);
+    transform:         translate3d(90px,90px,0) scale(.8,.8);
+}
+.option .option2 {
+    -webkit-transform: translate3d(0,90px,0) scale(.8,.8);
+    transform:         translate3d(0,90px,0) scale(.8,.8);
+}
+.option .option3 {
+    -webkit-transform: translate3d(-90px,90px,0) scale(.8,.8);
+    transform:         translate3d(-90px,90px,0) scale(.8,.8);
+}
+.option.scale-on .option1, 
+.option.scale-on .option2,
+.option.scale-on .option3 {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -webkit-transform: none;
+    transform:         none;
+    -webkit-transition: all .175s;
+    transition:         all .175s;
+}
+.option.scale-on .option2 {
+    -webkit-transform: translateY(-28px) translateZ(0);
+    transform:         translateY(-28px) translateZ(0);
+    -webkit-transition: all .175s;
+    transition:         all .175s;
+}
+
+@keyframes toggleBtnAnim {
+    0% {
+        -webkit-transform: scale(1,1);
+        transform:         scale(1,1);
+    }
+    25% {
+        -webkit-transform: scale(1.4,1.4);
+        transform:         scale(1.4,1.4); 
+    }
+    75% {
+        -webkit-transform: scale(1.2,1.2);
+        transform:         scale(1.2,1.2);
+    }
+    100% {
+        -webkit-transform: scale(1.3,1.3);
+        transform:         scale(1.3,1.3);
+    }
+}
+@-webkit-keyframes toggleBtnAnim {
+    0% {
+        -webkit-transform: scale(1,1);
+        transform:         scale(1,1);
+    }
+    25% {
+        -webkit-transform: scale(1.4,1.4);
+        transform:         scale(1.4,1.4); 
+    }
+    75% {
+        -webkit-transform: scale(1.2,1.2);
+        transform:         scale(1.2,1.2);
+    }
+    100% {
+        -webkit-transform: scale(1.3,1.3);
+        transform:         scale(1.3,1.3);
+    }
+}
+
+.timeline {
+    position: relative;
+    padding:4px 0 0 0;
+    margin-top:22px;
+    list-style: none;
+}
+
+.timeline>li:nth-child(even) {
+    position: relative;
+    margin-bottom: 50px;
+    height: 180px;
+    right:-100px;
+}
+
+.timeline>li:nth-child(odd) {
+    position: relative;
+    margin-bottom: 50px;
+    height: 180px;
+    left:-100px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+    min-height: 170px;
+}
+
+.timeline > li .timeline-panel {
+  position: relative;
+  float: left;
+  width: 41%;
+  padding: 0 20px 20px 30px;
+  text-align: right;
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    border: 7px solid #3b5998;
+    border-radius: 100%;
+    background-color: #3b5998;
+    box-shadow: 0 0 5px #4582ec;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+}
+
+.timeline>li .timeline-image h4 {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4 {
+  margin-top:22px;
+    margin-bottom: 4px;
+    padding:0;
+    color: #b3b3b3;
+}
+
+.timeline .timeline-heading h4.subheading {
+  margin:0;
+  padding:0;
+    text-transform: none;
+    font-size:18px;
+    color:#333333;
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+    margin-bottom: 0;
+    color:#808080;
+}
+/*Style for even div.line*/
+.timeline>li:nth-child(odd) .line:before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 690px;
+    width: 4px;
+    height:340px;
+    background-color: #3b5998;
+    -ms-transform: rotate(-44deg); /* IE 9 */
+    -webkit-transform: rotate(-44deg); /* Safari */
+    transform: rotate(-44deg);
+    box-shadow: 0 0 5px #4582ec;
+}
+/*Style for odd div.line*/
+.timeline>li:nth-child(even) .line:before  {
+    content: "";
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 450px;
+    width: 4px;
+    height:340px;
+    background-color: #3b5998;
+    -ms-transform: rotate(44deg); /* IE 9 */
+    -webkit-transform: rotate(44deg); /* Safari */
+    transform: rotate(44deg);
+    box-shadow: 0 0 5px #4582ec;
+}
+/* Medium Devices, .visible-md-* */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .timeline > li:nth-child(even) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    right: 0px;
+  }
+  .timeline > li:nth-child(odd) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    left: 0px;
+  }
+  .timeline>li:nth-child(even) .timeline-image {
+    left: 0;
+    margin-left: 0px;
+  }
+  .timeline>li:nth-child(odd) .timeline-image {
+    left: 690px;
+    margin-left: 0px;
+  }
+  .timeline > li:nth-child(even) .timeline-panel {
+    width: 76%;
+    padding: 0 0 20px 0px;
+    text-align: left;
+  }
+  .timeline > li:nth-child(odd) .timeline-panel {
+    width: 70%;
+    padding: 0 0 20px 0px;
+    text-align: right;
+  }
+  .timeline > li .line {
+    display: none;
+  }
+}
+/* Small Devices, Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .timeline > li:nth-child(even) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    right: 0px;
+  }
+  .timeline > li:nth-child(odd) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    left: 0px;
+  }
+  .timeline>li:nth-child(even) .timeline-image {
+    left: 0;
+    margin-left: 0px;
+  }
+  .timeline>li:nth-child(odd) .timeline-image {
+    left: 520px;
+    margin-left: 0px;
+  }
+  .timeline > li:nth-child(even) .timeline-panel {
+    width: 70%;
+    padding: 0 0 20px 0px;
+    text-align: left;
+  }
+  .timeline > li:nth-child(odd) .timeline-panel {
+    width: 70%;
+    padding: 0 0 20px 0px;
+    text-align: right;
+  }
+  .timeline > li .line {
+    display: none;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 767px) {
+  .timeline > li:nth-child(even) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    right: 0px;
+  }
+  .timeline > li:nth-child(odd) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    left: 0px;
+  }
+  .timeline>li .timeline-image {
+    position: static;
+    width: 150px;
+    height: 150px;
+    margin-bottom:0px;
+  }
+  .timeline>li:nth-child(even) .timeline-image {
+    left: 0;
+    margin-left: 0;
+  }
+  .timeline>li:nth-child(odd) .timeline-image {
+    float:right;
+    left: 0px;
+    margin-left:0;
+  }
+  .timeline > li:nth-child(even) .timeline-panel {
+    width: 100%;
+    padding: 0 0 20px 14px;
+  }
+  .timeline > li:nth-child(odd) .timeline-panel {
+    width: 100%;
+    padding: 0 14px 20px 0px;
+  }
+  .timeline > li .line {
+    display: none;
+  }
+}
+
+.box {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 25px;
+    text-align: right;
+    display: block;
+    margin-top: 60px;
+}
+.box-icon {
+    background-color: #57a544;
+    border-radius: 50%;
+    display: table;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: -61px;
+}
+.box-icon span {
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.info h4 {
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.info > p {
+    color: #717171;
+    font-size: 16px;
+    padding-top: 10px;
+    text-align: justify;
+}
+.info > a {
+    background-color: #03a9f4;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+.info > a:hover {
+    background-color: #0288d1;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+
+
+</style>
+</head>
+<body>
+<div>
+    <div class="card hovercard">
+        <div class="card-background">
+            <img class="card-bkimg" alt="" src="http://assets.worldwildlife.org/photos/946/images/story_full_width/forests-why-matter_63516847.jpg?1345534028">
+            <!-- http://lorempixel.com/850/280/people/9/ -->
+        </div>
+        
+       		<div class="useravatar">
+            	<img alt="" src="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12196012_10153042733242330_4273965928042748132_n.jpg?oh=d3fc741cfe4ea19e51831f463f6ca342&oe=56CB9B54">
+        	</div>
+			<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+			
+			<div class="container">
+				<div class="row">
+			      <div class="col-md-4 col-md-offset-4">
+			        <div class="material-button-anim">
+			          <ul class="list-inline" id="options">
+			            <li class="option">
+			              <button class="material-button option1" type="button">
+			                <span class=" fa fa-facebook " aria-hidden="true" onclick="location.href='https://www.facebook.com/volga.c.karakus';"></span>
+			              </button>
+			            </li>
+			            <li class="option">
+			              <button class="material-button option2" type="button" onclick="location.href='mailto:vkaraku2@illinois.edu';">
+			                <span class="fa fa-envelope-o" aria-hidden="true"></span>
+			              </button>
+			            </li>
+			            <li class="option">
+			              <button class="material-button option3" type="button" onclick="location.href='https://www.dropbox.com/s/4eew11ai2cumg67/Volga_s_CV%20recent.pdf?dl=0';">
+			                <span class="fa fa-file-pdf-o" aria-hidden="true"></span>
+			              </button>
+			            </li>
+			          </ul>
+			          <button class="material-button material-button-toggle" type="button" ">
+			            <span class="fa fa-plus" aria-hidden="true"></span>
+			          </button>
+			        </div>
+			      </div>
+				</div>
+        <div class="card-info"> <span class="card-title">Volga Karakus</span>
+
+        </div>
+    </div>
+    <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+        <div class="btn-group" role="group">
+            <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <div class="hidden-xs">About Me</div>
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+                <div class="hidden-xs">My Family</div>
+            </button>
+        </div>
+
+    </div>
+
+        <div class="well">
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="tab1">
+          <div class="well well-sm text-center">
+		<div class="btn-group" data-toggle="buttons">
+			
+			<label class="btn btn-success active">
+				<input type="checkbox" autocomplete="off" checked>
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>
+
+			<label class="btn btn-primary">
+				<input type="checkbox" autocomplete="off">
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>			
+		
+			<label class="btn btn-info">
+				<input type="checkbox" autocomplete="off">
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>			
+		
+			<label class="btn btn-default">
+				<input type="checkbox" autocomplete="off">
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>			
+
+			<label class="btn btn-warning">
+				<input type="checkbox" autocomplete="off">
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>			
+		
+			<label class="btn btn-danger">
+				<input type="checkbox" autocomplete="off">
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>			
+		</div>
+		<div>
+		    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="box">
+                <div class="box-icon">
+                    <span class="fa fa-4x fa-book"></span>
+                </div>
+                <div class="info">
+                    <h4 class="text-center">Personal Information</h4>
+                    <p>Place & Date of Birth: <strong>Meudon, Paris France | 21 june 1995</strong></p>
+                    <p>Citizenship: <strong>Turkish</strong></p>
+                    <p>Address: <strong>606 and 1/2 West Elm unit 1, Urbana 61801 Illinois</strong></p>
+                    <p>Email & Phone: <strong>vkaraku2@illinois.edu | +1 217 898 7353</strong></p>
+                    <a href="https://www.facebook.com/volga.c.karakus" class="btn">Facebook</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="box">
+                <div class="box-icon">
+                    <span class="fa fa-4x fa-check-square-o"></span>
+                </div>
+                <div class="info">
+                    <h4 class="text-center">Work Experience</h4>
+                    <p>Summer 2015 <strong>Software engineering intern at Guven Software, Istanbul Turkey</strong></p>
+                    <p>During my internship I have been assigned to work on the back-end of a website using HTML, CSS and JavaScript where I would display variant weather information regarding today’s weather and the next 7 days. I gathered data using a weather forecast web site’s API with the aid of JSON in order to provide the users with a good forecast.</p>
+                    <a href="http://www.cumhuriyet.com.tr/" class="btn">Link</a>
+                </div>
+            </div>
+        </div>
+	</div>
+	  <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="box">
+                <div class="box-icon">
+                    <span class="fa fa-4x fa-graduation-cap "></span>
+                </div>
+                <div class="info">
+                    <h4 class="text-center">Education</h4>
+                    <p>2013 -- <strong>University of Illinois at Urbana Champaign</strong></p>
+                    <p><strong>Major :</strong> Agricultural and Biological Engineering.</p>
+                    <p><strong>Minor :</strong> Computer Science.</p>
+                    <p><strong>GPA :</strong> 2.94/4.</p>
+                    <p>1998 - 2012 <strong>Lycée Pierre Loti d’Istanbul</strong></p>
+                    <a href="http://abe.illinois.edu/" class="btn">UIUC Link</a>
+                    <a href="http://www.pierreloti.k12.tr/www2/" class="btn">PL Link</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="box">
+                <div class="box-icon">
+                    <span class="fa fa-4x fa-child"></span>
+                </div>
+                <div class="info">
+                    <h4 class="text-center">Interests & Skills</h4>
+                    <p><strong>Computer Skills: </strong> C++, Java, JavaScript, CSS, HTML, LaTex, Android</p>
+                    <p><strong>Interests: </strong> Technology, Programming, Astronomy, Climbing, Travelling, Gardening</p>
+                    <a href="" class="btn">Link</a>
+                </div>
+            </div>
+        </div>
+	</div>
+	  <div class="row">
+      
+	</div>
+	
+		</div>
+
+	</div>
+          
+        </div>
+        <div class="tab-pane fade in" id="tab2">
+              <div class="col-lg-12">
+      <h3 class="text-center">My family!</h3>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/hprofile-ash2/v/t1.0-1/1925275_10200678927175582_862749304_n.jpg?oh=adf41f9e12ff52803670a299d89acae4&oe=56B5E0EB" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>My Father</h4>
+              <h4 class="subheading">Osman Karakus</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+              	Computer Engineer co-founder of Yaynet.
+              </p>
+              <a href="http://www.medyacebimde.com/" class="btn">Link</a>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10404892_608161335963828_1873229711185682221_n.jpg?oh=bea16fdf219a1ef489aa90dadf5eaabf&oe=56CD602C" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>My Mother</h4>
+              <h4 class="subheading">Mine Karakus</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Electrical Engineer works at Tekfen Construction Industry.
+              </p>
+              <a href="http://www.tekfen.com.tr/english/contracting.asp" class="btn">Link</a>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li>
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/c235.183.457.457/s320x320/11406767_10153286230401253_7213268420367190186_n.jpg?oh=bb1da000743a8cbf95c9ba71626ae176&oe=56C0B8A3" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>My Brother</h4>
+              <h4 class="subheading">Efe Karakus</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+               Computer Science engineer works at Amazon.
+              </p>
+              <a href="http://efekarakus.com/" class="btn">Link</a>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+      </ul>
+    </div>
+        </div>
+
+      </div>
+    </div>
+    
+    </div>
+            
+
+<script>
+$(document).ready(function() {
+	$(".btn-pref .btn").click(function () {
+	    $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+	    // $(".tab").addClass("active"); // instead of this do the below 
+	    $(this).removeClass("btn-default").addClass("btn-primary");   
+	});
+});
+	
+$(document).ready(function () {
+    $('.material-button-toggle').click(function () {
+        $(this).toggleClass('open');
+        $('.option').toggleClass('scale-on');
+    });
+});
+</script>
+
+</body>
+</html>
