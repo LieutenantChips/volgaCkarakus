@@ -492,7 +492,7 @@
     margin-top: 60px;
 }
 .box-icon {
-    background-color: #57a544;
+    background-color: #50AEB2;
     border-radius: 50%;
     display: table;
     height: 100px;
@@ -530,6 +530,122 @@
     color: #fff;
     transition: all 0.5s ease 0s;
 }
+/* 
+Inspired by http://dribbble.com/shots/890759-Ui-Kit-Metro/attachments/97174
+*/
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+}
+
+.btn-nav {
+    background-color: #fff;
+    border: 1px solid #e0e1db;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.btn-nav:hover {
+    color: #e92d00;
+    cursor: pointer;
+    -webkit-transition: color 1s; /* For Safari 3.1 to 6.0 */
+    transition: color 1s;
+}
+.btn-nav.active {
+    color: #e92d00;
+    padding: 2px;
+	border-top: 6px solid #40DCCC;
+	border-bottom: 6px solid #40DCCC;
+    border-left: 0;
+    border-right: 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+    -moz-transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+    -ms-transition: border 0.3s ease-out, color 0.3s ease 0.5s; /* IE10 is actually unprefixed */
+    -o-transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+    transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+}
+.btn-nav.active:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 6px 6px 0;
+	border-color: #40DCCC transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-left: -6px;
+	top: 0;
+	left: 50%;
+}
+.btn-nav .glyphicon {
+    padding-top: 16px;
+	font-size: 40px;
+}
+.btn-nav.active p {
+    margin-bottom: 8px;
+}
+@-webkit-keyframes pulsate {
+ 50% { color: #000; }
+}
+@keyframes pulsate {
+ 50% { color: #000; }
+}
+@media (max-width: 480px) {
+    .btn-group {
+        display: block !important;
+        float: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+@media (max-width: 600px) {
+    .btn-nav .glyphicon {
+        padding-top: 12px;
+        font-size: 26px;
+    }
+}
+.box {
+  background:#fff;
+  transition:all 0.2s ease;
+  border:2px dashed #40DCCC;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  border-radius: 5px;
+  padding:0 20px 20px 20px;
+}
+
+.box:hover {
+  border:2px solid #F66125;
+}
+.box span.box-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.box .box-content {
+  padding: 16px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+.box .box-content p {
+  color:#515c66;
+  text-transform:none;
+}
+
 
 
 </style>
@@ -538,7 +654,7 @@
 <div>
     <div class="card hovercard">
         <div class="card-background">
-            <img class="card-bkimg" alt="" src="http://assets.worldwildlife.org/photos/946/images/story_full_width/forests-why-matter_63516847.jpg?1345534028">
+            <img class="card-bkimg" alt="" src="https://scontent-atl3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/575044_10150842424482330_765021168_n.jpg?oh=a372313591e93c83129444485caa9314&oe=56AE8013">
             <!-- http://lorempixel.com/850/280/people/9/ -->
         </div>
         
@@ -675,63 +791,47 @@
         </div>
         <div class="tab-pane fade in" id="tab2">
               <div class="col-lg-12">
-      <h3 class="text-center">My family!</h3>
-      <ul class="timeline">
-        <li>
-          <div class="timeline-image">
-            <img class="img-circle img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/hprofile-ash2/v/t1.0-1/1925275_10200678927175582_862749304_n.jpg?oh=adf41f9e12ff52803670a299d89acae4&oe=56B5E0EB" alt="">
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>My Father</h4>
-              <h4 class="subheading">Osman Karakus</h4>
+<div class="container">
+    <div class="row">
+		<div class="btn-group btn-group-justified">
+            <div class="btn-group">
+                <div class="btn btn-nav active">
+                    <span class="glyphicon glyphicon-king"></span>
+    			    <p>Father</p>
+                </div>
+                <h1 class="tag-title text-center">Osman Karakus</h1>
+                <p class="text-center"><strong>Computer Engineer</strong></p>
+                <p class="text-center">Co-founder of Guven Software Technology</p>
+                <a href="http://www.medyacebimde.com/" class="btn btn-block btn-primary">Learn More</a>
+                <!--Computer Engineer, co-founder Guven Software technology -->
+                
             </div>
-            <div class="timeline-body">
-              <p class="text-muted">
-              	Computer Engineer co-founder of Yaynet.
-              </p>
-              <a href="http://www.medyacebimde.com/" class="btn">Link</a>
+            
+            <div class="btn-group">
+                <div class="btn btn-nav active">
+                    <span class="glyphicon glyphicon-queen"></span>
+    			    <p>Mother</p>
+                </div>
+                <h1 class="tag-title text-center">Mine Karakus</h1>
+                <p class="text-center"><strong>Electrical Engineer</strong></p>
+                <p class="text-center">Works at Tekfen Construction</p>
+                <a href="http://www.tekfenconstruction.com.tr/" class="btn btn-block btn-primary">Learn More</a>
+                
             </div>
-          </div>
-          <div class="line"></div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-image">
-            <img class="img-circle img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10404892_608161335963828_1873229711185682221_n.jpg?oh=bea16fdf219a1ef489aa90dadf5eaabf&oe=56CD602C" alt="">
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>My Mother</h4>
-              <h4 class="subheading">Mine Karakus</h4>
+            <div class="btn-group">
+                <div  class="btn btn-nav active">
+                    <span class="glyphicon glyphicon-knight"></span>
+    			    <p>Brother</p>
+                </div>
+                <h1 class="tag-title text-center">Efe Karakus</h1>
+                <p class="text-center"><strong>Computer Science</strong></p>
+                <p class="text-center">Works at Amazon</p>
+                <a href="http://www.amazon.com/" class="btn btn-block btn-primary">Learn More</a>
             </div>
-            <div class="timeline-body">
-              <p class="text-muted">
-                Electrical Engineer works at Tekfen Construction Industry.
-              </p>
-              <a href="http://www.tekfen.com.tr/english/contracting.asp" class="btn">Link</a>
             </div>
-          </div>
-          <div class="line"></div>
-        </li>
-        <li>
-          <div class="timeline-image">
-            <img class="img-circle img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/c235.183.457.457/s320x320/11406767_10153286230401253_7213268420367190186_n.jpg?oh=bb1da000743a8cbf95c9ba71626ae176&oe=56C0B8A3" alt="">
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>My Brother</h4>
-              <h4 class="subheading">Efe Karakus</h4>
-            </div>
-            <div class="timeline-body">
-              <p class="text-muted">
-               Computer Science engineer works at Amazon.
-              </p>
-              <a href="http://efekarakus.com/" class="btn">Link</a>
-            </div>
-          </div>
-          <div class="line"></div>
-        </li>
-      </ul>
+        </div>
+	</div>
+</div>
     </div>
         </div>
 
@@ -756,17 +856,20 @@ $(document).ready(function () {
         $('.option').toggleClass('scale-on');
     });
 });
-</script>
+/*
+var activeEl = 2;
+$(function() {
+    var items = $('.btn-nav');
+    $( items[activeEl] ).addClass('active');
+    $( ".btn-nav" ).click(function() {
+        $( items[activeEl] ).removeClass('active');
+        $( this ).addClass('active');
+        activeEl = $( ".btn-nav" ).index( this );
+    });
+});
+*/
 
-</body>
-</html><%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+</script>
 
 </body>
 </html>
